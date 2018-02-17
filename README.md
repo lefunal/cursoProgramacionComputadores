@@ -1,3 +1,3 @@
 # Wiki para el curso de Programación de Computadores
 
-## [Codeblocks FAQ](./CodeBlocksFAQ.md) 
+## [Codeblocks FAQ](./CodeBlocks/CodeBlocksFAQ.md) 
