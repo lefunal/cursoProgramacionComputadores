@@ -4,6 +4,12 @@
 
 [Pagina de descargas](http://www.codeblocks.org/downloads), ir al link que dice "Download the binary release" descargar el Codeblocks correspondiente a su plataforma.
 
+Para Windows descargar Codeblocks con el compilador:
+    codeblocks-17.12mingw-setup.exe
+
+![alt text](./CodeBlockDownload.png "Img")
+
+
 En caso de tener Mac, quizas sea mejor usar Xcode que se puede descargar en el App Store
 
 ## No me aparecen los menus con run, build, etc.
