@@ -15,14 +15,19 @@ using namespace std;  // si no se usa --> usar extensión ".h" ej: # include <io
 
 int main(void)
 {
-    
-    int n;
-    bool esMenorDeEdad;
-    
-    int arregloEdades [4] = {18, 19, 15, 13};
    
-    esMenorDeEdad = (arregloEdades[0] < 18);
-    cout << "arregloEdades[" << 0 << "] es mayor de edad? " << esMenorDeEdad << endl;
+     
+    int tamanoArreglo = 4;
+    bool arreglo [4] = {true, false, true, true};
+    
+    bool todosSonTrue = true;
+
+    for(int n = 0; n < tamanoArreglo; n = n + 1){
+      todosSonTrue = todosSonTrue && arreglo[n];
+    }
+
+   
+    cout << "¿Todos los valores son True? " << todosSonTrue << endl;
     
     
     system ("pause");
