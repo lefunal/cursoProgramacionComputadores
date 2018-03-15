@@ -82,8 +82,8 @@ int main(void)
   cout << "b= " << b << endl;
 
 
-system ("pause");
-return 0;
+  system ("pause");
+  return 0;
 }
 
 //....... FIN ...............

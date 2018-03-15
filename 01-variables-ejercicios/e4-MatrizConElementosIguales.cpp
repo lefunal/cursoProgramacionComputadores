@@ -40,6 +40,8 @@ int main(void)
     else {
         cout << "No todos los elementos de la matriz son iguales a: " << num << endl;
     }
+
+    system ("pause");    
         
     return 0;
 }
