@@ -67,21 +67,16 @@ int factorial(int n){
 }
 
 int factorialCiclos(int n){
-    if(n == 0){
-        return 1;
+    int factorialMMenosUno = 1;
+    int factorialM = factorialMMenosUno;
+    
+    for(int m = 1; m <= n; m = m + 1){
+        factorialM = m * factorialMMenosUno;
+        
+        factorialMMenosUno = factorialM; // Se actualiza para la proxima iteracion
     }
-    else{
-        int factorialMMenosUno = 1;
-        int factorialM = 1;
-        for(int m = 1; m <= n; m = m + 1){
-            factorialM = m * factorialMMenosUno;
-            
-            factorialMMenosUno = factorialM; // Se actualiza para la proxima iteracion
-        }
-        return factorialM;
-    }
+    return factorialM;
 }
-
 
 
 
