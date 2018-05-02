@@ -24,24 +24,24 @@ int main()
     cin2.open("entrada1.txt");
     
     cout2.open("salida2.txt");
-
+    
     //Se van a leer los primeros dos valores de cada linea y se van a escribir al otro archivo
-    while(!getline(cin2, linea).eof()){
+    while(getline(cin2, linea)){
         cout << linea << endl;
         
         istringstream iss(linea);
         double b1,b2;
         iss >> b1;
         iss >> b2;
-
+        
         cout2 << b1 << '\t';
         cout2 << b2 << endl;
     }
-
+    
     //Se cierra
     cin2.clear();   //Borra flags, importante si cin2 se va ha usar para leer varios archivos
     cin2.close();
-
+    
     cout2.clear();  //Borra flags, importante si cout2 se va ha usar para escribir varios archivos
     cout2.close();
     
